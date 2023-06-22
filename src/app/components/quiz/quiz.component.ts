@@ -7,23 +7,23 @@ import quiz_questions from "../../../assets/data/quiz_questions.json"
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent {
-  title:string = ""
+  title: string = ""
 
-  questions:any
-  questionSelected:any
+  questions: any
+  questionSelected: any
 
-  answers:string[] = []
-  answerSelected:string = ""
+  answers: string[] = []
+  answerSelected: string = ""
 
-  questionIndex:number = 0
-  questionMaxIndex:number = 0
+  questionIndex: number = 0
+  questionMaxIndex: number = 0
 
-  finished:boolean = false
+  finished: boolean = false
 
   constructor() { }
 
   ngOnInit(): void {
-    if(quiz_questions) {
+    if (quiz_questions) {
       this.finished = false
       this.title = quiz_questions.title
 
@@ -32,6 +32,20 @@ export class QuizComponent {
 
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
+    }
+  }
+
+  playerChoose(value: string) {
+    this.answers.push(value)
+  }
+
+  async nextStep() {
+    this.questionIndex += 1
+
+    if(this.questionMaxIndex > this.questionIndex){
+      this.questionSelected = this.questions[this.questionIndex]
+    } else {
+      this.finished = true
     }
   }
 }
