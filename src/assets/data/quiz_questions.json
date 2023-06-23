@@ -1,9 +1,9 @@
 {
-    "title": "Você seria um heroi ou vilão ?",
+    "title": "Você seria um Herói ou Vilão?",
     "questions": [
         {
             "id": 1,
-            "question": "Qual super poder você escolheria ?",
+            "question": "Qual super poder você escolheria?",
             "options": [
                 {
                     "id": 1,
@@ -34,7 +34,7 @@
         },
         {
             "id": 2,
-            "question": "Quem você salvaria primeiro ?",
+            "question": "Quem você salvaria primeiro?",
             "options": [
                 {
                     "id": 1,
@@ -55,7 +55,7 @@
         },
         {
             "id": 3,
-            "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+            "question": "Qual a sua maior preocupação ao enfrentar outro super ser?",
             "options": [
                 {
                     "id": 1,
@@ -81,11 +81,11 @@
         },
         {
             "id": 4,
-            "question": "Qual o seu maior foco ?",
+            "question": "Qual o seu maior foco como Super?",
             "options": [
                 {
                     "id": 1,
-                    "name": "Ficar rico com poderes",
+                    "name": "Mostrar que sou melhor que todos!",
                     "alias": "A"
                 },
                 {
@@ -97,7 +97,7 @@
         },
         {
             "id": 5,
-            "question": "Qual o seu apelido de super ser ?",
+            "question": "Qual apelido você escolheria se fosse um Super?",
             "options": [
                 {
                     "id": 1,
@@ -108,12 +108,22 @@
                     "id": 2,
                     "name": "Amigo da vizinhança",
                     "alias": "B"
+                },
+                {
+                    "id": 3,
+                    "name": "O Destemido",
+                    "alias": "A"
+                },
+                {
+                    "id": 4,
+                    "name": "Preferiria não ter um apelido",
+                    "alias": "B"
                 }
             ]
         }
     ],
     "results": {
-        "A": "Você muito provavelmente seria um super vilão!",
-        "B": "Você muito provavelmente seria um super Herói!"
+        "A": "Você muito provavelmente seria um Super Vilão!",
+        "B": "Você muito provavelmente seria um Super Herói!"
     }
 }
